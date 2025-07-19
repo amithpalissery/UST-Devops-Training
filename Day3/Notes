@@ -3,3 +3,18 @@ Isuue:
 Resolution:
  Added user to docker group using command "sudo usermod -aG docker ${USER}", also we need to reconnect to vm to take this in effect.
  without doing that , we may need to add sudo to every commmand.
+
+1.Pulled ubuntu image form docker 
+    docker pull ubuntu:latest
+2.List downloaded images
+     docker images
+3.Run an interactive container
+   docker run -it ubuntu bash
+4.Run a detached container
+    docker run -d -p 80:80 nginx:latest
+5.List running conatainers
+    docker ps
+6.stop a container
+    docker stop <container_id>
+7.Remove a container after stopping it 
+   docker rm <container_id>
