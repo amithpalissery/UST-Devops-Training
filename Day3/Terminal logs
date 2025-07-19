@@ -1,0 +1,119 @@
+Terminal logs
+
+
+ubuntu@ip-172-31-5-75:~$
+logout
+Connection to 3.141.197.143 closed.
+
+MATRIX@LAPTOP-416RFH41 MINGW64 /d/Downloads
+$ ssh -i Amith.pem ubuntu@3.141.197.143
+Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 6.8.0-1029-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Sat Jul 19 08:46:22 UTC 2025
+
+  System load:  0.08              Processes:             113
+  Usage of /:   30.5% of 7.57GB   Users logged in:       0
+  Memory usage: 7%                IPv4 address for eth0: 172.31.5.75
+  Swap usage:   0%
+
+ * Ubuntu Pro delivers the most comprehensive open source security and
+   compliance features.
+
+   https://ubuntu.com/aws/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+86 updates can be applied immediately.
+67 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+New release '24.04.2 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+Last login: Sat Jul 19 08:34:22 2025 from 59.94.199.152
+ubuntu@ip-172-31-5-75:~$ docker run hello-world
+Unable to find image 'hello-world:latest' locally
+latest: Pulling from library/hello-world
+e6590344b1a5: Pull complete
+Digest: sha256:ec153840d1e635ac434fab5e377081f17e0e15afab27beb3f726c3265039cfff
+Status: Downloaded newer image for hello-world:latest
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+ubuntu@ip-172-31-5-75:~$ docker images
+REPOSITORY    TAG       IMAGE ID       CREATED        SIZE
+hello-world   latest    74cc54e27dc4   5 months ago   10.1kB
+ubuntu@ip-172-31-5-75:~$ docker pull ubuntu:latest
+latest: Pulling from library/ubuntu
+32f112e3802c: Pull complete
+Digest: sha256:a08e551cb33850e4740772b38217fc1796a66da2506d312abe51acda354ff061
+Status: Downloaded newer image for ubuntu:latest
+docker.io/library/ubuntu:latest
+ubuntu@ip-172-31-5-75:~$ docker run -it ubuntu bash
+root@d921f5359177:/# exit
+exit
+ubuntu@ip-172-31-5-75:~$ docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+ubuntu@ip-172-31-5-75:~$ docker run -d -p 80:80 nginx:latest
+Unable to find image 'nginx:latest' locally
+latest: Pulling from library/nginx
+3da95a905ed5: Pull complete
+037111f539a0: Pull complete
+1e537b66692c: Pull complete
+d3618cedc15e: Pull complete
+63b1ad245775: Pull complete
+40c013bb3d47: Pull complete
+ec5daaed1d0a: Pull complete
+Digest: sha256:f5c017fb33c6db484545793ffb67db51cdd7daebee472104612f73a85063f889
+Status: Downloaded newer image for nginx:latest
+aaa262d40968955f87845ff9476124b32879d04e26f358f4201aa37e04e9ceda
+ubuntu@ip-172-31-5-75:~$ docker ps
+CONTAINER ID   IMAGE          COMMAND                  CREATED         STATUS         PORTS                                 NAMES
+aaa262d40968   nginx:latest   "/docker-entrypoint.…"   7 seconds ago   Up 4 seconds   0.0.0.0:80->80/tcp, [::]:80->80/tcp   practical_montalcini
+ubuntu@ip-172-31-5-75:~$ docker stop ^C
+ubuntu@ip-172-31-5-75:~$ docker stop aaa262d40968
+aaa262d40968
+ubuntu@ip-172-31-5-75:~$ docker stop
+docker: 'docker stop' requires at least 1 argument
+
+Usage:  docker stop [OPTIONS] CONTAINER [CONTAINER...]
+
+See 'docker stop --help' for more information
+ubuntu@ip-172-31-5-75:~$ docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+ubuntu@ip-172-31-5-75:~$ docker remove aaa262d40968
+docker: unknown command: docker remove
+
+Run 'docker --help' for more information
+ubuntu@ip-172-31-5-75:~$ docker rm aaa262d40968
+aaa262d40968
+ubuntu@ip-172-31-5-75:~$ docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+ubuntu@ip-172-31-5-75:~$
