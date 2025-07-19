@@ -1,0 +1,44 @@
+Day 1: Linux Commands Familiarization
+Date: July 19, 2025
+
+Today, I focused on getting acquainted with the fundamentals of Linux, tried some linux commands
+
+Navigation & Listing:
+
+ pwd -> Print working directory.
+ ls -> List files and directories in current location.
+ ls -l -> List files and directories with long format (details, permissions).
+ ls -a -> List all files and directories, including hidden ones.
+ ls -lh -> List with long format and human-readable file sizes.
+ cd <directory> -> Change current directory.
+ cd .. -> Go up one directory level.
+ cd ~ -> Go to home directory.
+ cd - -> Go to the previous directory.
+
+File & Directory Management:
+
+ mkdir <directory_name> -> Create a new directory.
+ rmdir <directory_name> -> Remove an empty directory.
+ touch <file_name> -> Create a new empty file or update timestamp of existing file.
+ cp <source> <destination> -> Copy files or directories.
+ cp -r <source_dir> <destination_dir> -> Copy directories recursively.
+ mv <source> <destination> -> Move or rename files/directories.
+ rm <file_name> -> delete a file.
+ rm -r <directory_name> -> Remove a directory and its contents recursively.
+ rm -f <file_name> -> Force delete a file without prompting.
+
+Viewing File Content:
+
+ cat <file_name> -> Display entire file content.
+ head <file_name> -> Display the first 10 lines of a file.
+ tail <file_name> -> Display the last 10 lines of a file.
+
+Searching:
+
+ grep "text" -> Search for text within files (basic).
+
+System & Permissions:
+
+man <command> -> Display the manual page for a command.
+sudo <command> -> Execute a command with root user privileges.
+chmod <permissions> <file> -> Change file permissions.
