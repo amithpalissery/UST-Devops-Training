@@ -1,0 +1,32 @@
+Day 2: Git
+
+Date: July 20, 2025
+
+Today, I began familiarizing myself with Git, understanding its core commands for version control and collaboration.
+
+Initializing & Basic Workflow:
+
+ git init -> Initialize a new Git repository in the current directory.
+ git status -> Show the status of changes as untracked, modified, or staged.
+ git add <file> -> Stage changes for the next commit.
+ git add . -> Stage all changes in the current directory.
+ git commit -m "message" -> Record staged changes to the repository with a descriptive message.
+
+Viewing History & Changes:
+
+ git log -> Display commit history.
+ git log --oneline -> Display concise commit history (one line per commit).
+ git diff -> Show changes between working directory and staging area.
+ git diff --staged -> Show changes between staging area and last commit.
+ git diff <commit1> <commit2> -> Show differences between two specific commits.
+
+Branching & Merging:
+
+ git branch -> List all local branches.
+ git branch <new_branch_name> -> Create a new branch.
+ git checkout <branch_name> -> Switch to a different branch.
+ git checkout -b <new_branch_name> -> Create and switch to a new branch.
+ git merge <branch_to_merge> -> Integrate changes from a specified branch into the current branch.
+ git branch -d <branch_name> -> Delete a local branch (only if merged).
+ git branch -D <branch_name> -> Force delete a local branch (even if unmerged).
+
