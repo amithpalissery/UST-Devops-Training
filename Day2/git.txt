@@ -30,3 +30,4 @@ Branching & Merging:
  git branch -d <branch_name> -> Delete a local branch (only if merged).
  git branch -D <branch_name> -> Force delete a local branch (even if unmerged).
 
+Note: git switch can also be used instead of git checkout
