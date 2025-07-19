@@ -1,0 +1,5 @@
+Isuue:
+ Got issues while running commands
+Resolution:
+ Added user to docker group using command "sudo usermod -aG docker ${USER}", also we need to reconnect to vm to take this in effect.
+ without doing that , we may need to add sudo to every commmand.
