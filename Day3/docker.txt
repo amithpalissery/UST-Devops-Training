@@ -1,0 +1,27 @@
+ Day 3: Docker
+
+Date: July 21, 2025
+
+Today, I started exploring Docker, understanding how to use containers for consistent environments and application deployment.
+
+Basic Concepts:
+
+ Images -> Read-only templates for creating containers.
+ Containers -> Runnable instances of an image.
+
+Docker Image Management:
+
+ docker pull <image_name>:<tag> -> Download a Docker image from a registry (e.g., Docker Hub).
+ docker images -> List all local Docker images.
+ docker rmi <image_id> -> Remove (delete) a Docker image.
+
+Docker Container Management:
+
+ docker run <image_name> -> Create and start a new container from an image.
+ docker ps -> List all running containers.
+ docker ps -a -> List all containers (running and stopped).
+ docker stop <container_id> -> Stop a running container.
+ docker start <container_id> -> Start a stopped container.
+ docker restart <container_id> -> Stop and then start a container.
+ docker rm <container_id> -> Delete a stopped container.
+ docker logs <container_id> -> View logs of a container.
