@@ -1,1 +1,22 @@
+Day 5:21/07/25
+Topics Covered
 
+Docker Volumes
+Commands: docker volume create, -v flag in docker run
+DockerHub/ECR:
+Logged into Docker Hub
+Tagged and attempted to push image
+
+ Practical Tasks Completed
+Logged into Docker Hub via CLI and pushed image successfully
+Explored local development using docker-compose
+Reviewed port mapping and service discovery
+
+Key Learnings
+Volumes decouple data from containers, enabling persistence
+Docker Compose simplifies multi-container environments
+
+Challenges
+Faced Docker daemon error — resolved by starting Docker Desktop
+Got access denied while pushing to Docker Hub — fixed via login and proper tagging
+Gained confidence writing multi-stage Dockerfile for Python apps
