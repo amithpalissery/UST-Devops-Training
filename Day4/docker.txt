@@ -1,1 +1,19 @@
-a
+Day 4: Docker Architecture & Image Management
+Topics Covered
+Docker Architecture
+Difference between Images and Containers
+Docker CLI commands (docker run, build, exec, ps, etc.)
+
+Writing Efficient Dockerfiles:
+Best practices (caching layers, minimal base images)
+Avoiding unnecessary RUN instructions
+
+Practical Tasks Completed
+Built a Docker image for a Flask app using a custom Dockerfile
+Understood the impact of each instruction (FROM, RUN, COPY, CMD)
+
+
+Key Learnings
+Image vs Container: Images are blueprints; containers are instances.
+Writing cleaner Dockerfile avoids bloated images and reduces build time.
+
