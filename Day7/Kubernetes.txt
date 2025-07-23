@@ -3,11 +3,13 @@ Today, I learned about kubernetes basics and tried a few commands to get familia
 
 
 Successfully SSH'd into the Kubernetes EC2 instance
-Verified kubectl functionality and cluster nodes
-Explored core K8s resources: Pods, Deployments, Services, Namespaces
-Deployed a simple Nginx application
-Created a Deployment
-Exposed it via a NodePort Service
-Successfully accessed Nginx via browser using EC2 IP and NodePort
-Practiced scaling and deleting deployments
-Explored kubectl logs and describe commands
+ couldn't run commands, showing an error
+I was because ,i was not logged in as root user, rectified it with sudo su
+
+Tried basic commands like :
+                            
+                            kubectl get namespace                            
+                            kubectl get pods
+                            kubectl get deployments
+                            kubectl get services
+I also successfully deployed a 3-replica Nginx application to Kubernetes, exposed it via a NodePort Service, accessed it via EC2 Public IP, and then cleaned up all resources.
