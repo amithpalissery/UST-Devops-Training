@@ -1,1 +1,13 @@
 Day 7:23/07/25
+Today, I learned about kubernetes basics and tried a few commands to get familiar with it.
+
+
+Successfully SSH'd into the Kubernetes EC2 instance
+Verified kubectl functionality and cluster nodes
+Explored core K8s resources: Pods, Deployments, Services, Namespaces
+Deployed a simple Nginx application
+Created a Deployment
+Exposed it via a NodePort Service
+Successfully accessed Nginx via browser using EC2 IP and NodePort
+Practiced scaling and deleting deployments
+Explored kubectl logs and describe commands
