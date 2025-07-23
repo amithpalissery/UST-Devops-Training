@@ -1,0 +1,42 @@
+Topics
+
+Docker Networking
+Types of Docker Networks:
+Bridge (default)
+Host
+Overlay (for Swarm)
+
+Creating custom networks with docker network create
+Container-to-container communication
+
+Inspecting and troubleshooting networks (docker network inspect)
+
+Docker Compose 
+Defining multi-container setups in docker-compose.yml
+Lifecycle commands: up, down, build, logs, exec
+Environment variables and .env file usage
+Volume and network declarations in Compose
+
+Port and service mapping
+Local Debugging Workflow
+
+
+Logs and debugging with docker-compose logs and exec
+
+Strategies for debugging Python/Flask containers
+
+Setting up live-reload or hot-reloading
+
+Multi-Stage Builds (Deep Dive)
+Separate build and runtime stages
+Using different base images for each stage
+Reducing final image size and attack surface
+Caching layers effectively
+  
+Practical Tasks 
+  
+Create a docker-compose.yml for the Flask app
+Define services (e.g., web, db)
+Use volumes for code mounting and logs
+Create a custom Docker network and test container communication
+Implement and test a multi-stage Dockerfile from source to runtime
