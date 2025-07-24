@@ -5,3 +5,6 @@ I also successfully deployed a 3-replica Nginx application to Kubernetes, expose
 
                   kubectl delete service nginx-deployment
                   kubectl delete service nginx-deployment
+
+
+The mintty.exe.stackdump file has been downloaded to my local system, reason is unknown.
