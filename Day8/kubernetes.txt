@@ -1,0 +1,7 @@
+I also successfully deployed a 3-replica Nginx application to Kubernetes, exposed it via a NodePort Service, accessed it via EC2 Public IP, and then cleaned up all resources.
+ commands used:
+                 kubectl create deployment nginx-deployment --image=nginx --replicas=3 
+                 kubectl expose deployment nginx-deployment --type=NodePort --port=80
+
+                  kubectl delete service nginx-deployment
+                  kubectl delete service nginx-deployment
