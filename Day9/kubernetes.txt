@@ -2,3 +2,15 @@ Study Log - July 25, 2025
 
 New EC2 instance was created from K8s AMI. 
 `kubelet` failing, so `kubeadm init` was key. Node `NotReady` fixed with Flannel CNI. `kubectl` now configured for `root` and `ubuntu`.
+
+
+Key Focus: K8s Demo - Deployments, Services, Scaling, & Self-Healing.
+
+ Got Tomcat app `Running` after fixing `Pending` status.
+ Challenge: Pods stuck in `Pending` due to `control-plane` taint on the node.
+ Resolution: Removed the taint from the node (`kubectl taint nodes --all <taint>-`). Much easier for single-node labs.
+ Changed Tomcat Service to `NodePort` for external browser access.
+ Successfully performed and observed rolling updates (no downtime!).
+ Demonstrated scaling up & down (added/removed pods dynamically).
+ Showcased self-healing by deleting a running pod and seeing K8s immediately replace it.
+ Successfully demonstrated internal communication to a ClusterIP Service using curl from within another Kubernetes Pod.
