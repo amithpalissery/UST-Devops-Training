@@ -1,0 +1,4 @@
+Study Log - July 25, 2025
+
+New EC2 instance was created from K8s AMI. 
+`kubelet` failing, so `kubeadm init` was key. Node `NotReady` fixed with Flannel CNI. `kubectl` now configured for `root` and `ubuntu`.
