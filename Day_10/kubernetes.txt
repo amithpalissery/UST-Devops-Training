@@ -1,0 +1,96 @@
+Study Log - July 26, 2025
+
+1. CONFIGMAPS
+----------------
+Definition:
+- ConfigMaps are used to store non-sensitive configuration data as key-value pairs.
+- They allow you to decouple configuration artifacts from image content to keep containerized applications portable.
+
+Key Points:
+- ConfigMaps can store data in various formats: literals, files, or directories.
+- Used for environment variables, command-line arguments, config files.
+
+Creating a ConfigMap:
+- From literal:
+  kubectl create configmap my-config --from-literal=key1=value1
+- From file:
+  kubectl create configmap my-config --from-file=path/to/config.txt
+
+Accessing ConfigMap in Pods:
+- As environment variables.
+- As command-line arguments.
+- Mounted as volumes.
+
+2. SECRETS
+--------------
+Definition:
+- Secrets store sensitive information such as passwords, OAuth tokens, and ssh keys.
+
+Key Points:
+- Stored in base64-encoded format.
+- More secure than ConfigMaps; supports encryption at rest.
+
+Creating a Secret:
+- From literal:
+  kubectl create secret generic my-secret --from-literal=password=1234
+- From file:
+  kubectl create secret generic my-secret --from-file=./secret.txt
+
+Using Secrets in Pods:
+- As environment variables.
+- Mounted as volumes.
+
+3. VOLUMES
+---------------
+Definition:
+- Volumes in Kubernetes provide a way for data to persist across container restarts.
+
+Types of Volumes:
+- emptyDir: Temporary storage for the pod lifetime.
+- hostPath: Mount a file or directory from the host node.
+- configMap, secret: Mount ConfigMaps and Secrets as files.
+
+Persistent Volumes (PVs) and Persistent Volume Claims (PVCs):
+- PV: A piece of storage in the cluster.
+- PVC: A request for storage by a user.
+
+Using Volume in Pod:
+```yaml
+volumes:
+  - name: config-volume
+    configMap:
+      name: my-config
+containers:
+  volumeMounts:
+    - mountPath: /etc/config
+      name: config-volume
+```
+
+4. ROLLING UPDATES
+------------------------
+Definition:
+- A deployment strategy to update applications without downtime.
+
+How it works:
+- Gradually replaces old pods with new ones.
+
+Commands:
+- kubectl rollout status deployment/my-deployment
+- kubectl rollout history deployment/my-deployment
+- kubectl rollout undo deployment/my-deployment
+
+Configuring Rolling Update Strategy:
+```yaml
+strategy:
+  type: RollingUpdate
+  rollingUpdate:
+    maxUnavailable: 1
+    maxSurge: 1
+```
+
+Benefits:
+- Zero downtime deployments.
+- Safe rollback if needed.
+
+--------------------
+
