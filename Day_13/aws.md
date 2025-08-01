@@ -4,7 +4,7 @@ Study Log - July 30, 2025
 
 ---
 
-##1. **AWS Cloud Overview**
+1. **AWS Cloud Overview**
 
 ### What is AWS?
 
@@ -25,7 +25,7 @@ Study Log - July 30, 2025
 
 ---
 
-##2. **AWS Global Infrastructure**
+2. **AWS Global Infrastructure**
 
 * **Region:** A geographical area (e.g., `us-east-1`)
 * **Availability Zone (AZ):** A data center (or multiple) in a region (e.g., `us-east-1a`)
@@ -33,7 +33,7 @@ Study Log - July 30, 2025
 
 ---
 
-##3. **Networking in AWS**
+3. **Networking in AWS**
 
 ### What is VPC (Virtual Private Cloud)?
 
@@ -52,7 +52,7 @@ Study Log - July 30, 2025
 
 ---
 
-##4. **Subnets**
+4. **Subnets**
 
 * Sub-segment of the VPC’s IP range.
 * **Public Subnet:**
@@ -66,7 +66,7 @@ Study Log - July 30, 2025
 
 ---
 
-##5. **Routing**
+5. **Routing**
 
 * **Route Table:** Controls traffic direction for subnets
 * **Internet Gateway (IGW):** Enables internet access for public subnets
@@ -74,7 +74,7 @@ Study Log - July 30, 2025
 
 ---
 
-##6. **Bastion Host**
+6. **Bastion Host**
 
 * A special-purpose EC2 instance in a **public subnet**
 * Used to securely **SSH into EC2s in private subnets**
@@ -82,7 +82,7 @@ Study Log - July 30, 2025
 
 ---
 
-##7. **IP Addressing in AWS**
+7. **IP Addressing in AWS**
 
 | Type           | Description                                                  |
 | -------------- | ------------------------------------------------------------ |
