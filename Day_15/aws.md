@@ -1,11 +1,11 @@
 Study Log - August 1, 2025
 ---
 
-# 📘 **Day 15: AWS EKS and ECS – Container Orchestration**
+#  **Day 15: AWS EKS and ECS – Container Orchestration**
 
 ---
 
-## 🚀 **What Are Containers?**
+##  **What Are Containers?**
 
 * Containers package your application code, libraries, and dependencies into a **single lightweight unit**.
 * Run consistently across different environments.
@@ -13,7 +13,7 @@ Study Log - August 1, 2025
 
 ---
 
-## 🧰 **AWS Container Services Overview**
+##  **AWS Container Services Overview**
 
 | Service     | Description                                                       |
 | ----------- | ----------------------------------------------------------------- |
@@ -23,15 +23,15 @@ Study Log - August 1, 2025
 
 ---
 
-## 🐳 **Amazon ECS (Elastic Container Service)**
+##  **Amazon ECS (Elastic Container Service)**
 
-### 🔹 What is ECS?
+###  What is ECS?
 
 * A **fully managed container orchestration service** from AWS.
 * Runs Docker containers.
 * Integrates with EC2 or Fargate for compute.
 
-### 🧱 ECS Components:
+###  ECS Components:
 
 | Component           | Description                                              |
 | ------------------- | -------------------------------------------------------- |
@@ -42,7 +42,7 @@ Study Log - August 1, 2025
 
 ---
 
-### 🔸 ECS Launch Types:
+### ECS Launch Types:
 
 | Launch Type | Description                                            |
 | ----------- | ------------------------------------------------------ |
@@ -51,7 +51,7 @@ Study Log - August 1, 2025
 
 ---
 
-### 🔧 ECS Workflow:
+###  ECS Workflow:
 
 1. Create **Task Definition**
 2. Define **Service** with desired task count
@@ -61,9 +61,9 @@ Study Log - August 1, 2025
 
 ---
 
-## ☸️ **Amazon EKS (Elastic Kubernetes Service)**
+## ☸ **Amazon EKS (Elastic Kubernetes Service)**
 
-### 🔹 What is EKS?
+###  What is EKS?
 
 * A **fully managed Kubernetes** control plane by AWS.
 * Lets you run Kubernetes workloads on AWS infrastructure.
@@ -71,7 +71,7 @@ Study Log - August 1, 2025
 
 ---
 
-### 🧱 EKS Architecture:
+###  EKS Architecture:
 
 | Component         | Description                                  |
 | ----------------- | -------------------------------------------- |
@@ -91,7 +91,7 @@ Study Log - August 1, 2025
 
 ---
 
-## 🔍 **ECS vs EKS – Quick Comparison**
+##  **ECS vs EKS – Quick Comparison**
 
 | Feature              | ECS                       | EKS                          |
 | -------------------- | ------------------------- | ---------------------------- |
@@ -104,7 +104,7 @@ Study Log - August 1, 2025
 
 ---
 
-## 🧠 **When to Use What?**
+##  **When to Use What?**
 
 | Use Case                                   | Best Option        |
 | ------------------------------------------ | ------------------ |
@@ -116,7 +116,7 @@ Study Log - August 1, 2025
 
 ---
 
-## 💡 Key Concepts to Remember
+##  Key Concepts to Remember
 
 | Concept         | ECS                        | EKS                                 |
 | --------------- | -------------------------- | ----------------------------------- |
@@ -128,14 +128,14 @@ Study Log - August 1, 2025
 
 ---
 
-## 🔒 Security Considerations
+##  Security Considerations
 
 * Use **IAM Roles for Tasks** (ECS) and **IAM for Service Accounts (IRSA)** (EKS)
 * Integrate with **AWS CloudWatch**, **GuardDuty**, **ECR scanning**, and **VPC security groups**
 
 ---
 
-## 🧪 Monitoring & Logging
+##  Monitoring & Logging
 
 | Tool               | ECS        | EKS            |
 | ------------------ | ---------- | -------------- |
@@ -146,7 +146,7 @@ Study Log - August 1, 2025
 
 ---
 
-## 📦 CI/CD with ECS & EKS
+##  CI/CD with ECS & EKS
 
 * Use **GitHub Actions**, **AWS CodePipeline**, or **Jenkins** to:
 
@@ -156,7 +156,7 @@ Study Log - August 1, 2025
 
 ---
 
-## 🛠 Sample CLI Tools
+##  Sample CLI Tools
 
 | Tool      | Purpose                    |
 | --------- | -------------------------- |
@@ -168,7 +168,7 @@ Study Log - August 1, 2025
 
 ---
 
-## 📝 Sample ECS Task Definition Snippet:
+##  Sample ECS Task Definition Snippet:
 
 ```json
 {
@@ -193,7 +193,7 @@ Study Log - August 1, 2025
 
 ---
 
-## ✅ Summary Table
+##  Summary Table
 
 | Feature           | ECS                           | EKS                            |
 | ----------------- | ----------------------------- | ------------------------------ |
