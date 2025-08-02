@@ -61,7 +61,7 @@ Study Log - August 1, 2025
 
 ---
 
-## ☸ **Amazon EKS (Elastic Kubernetes Service)**
+##  **Amazon EKS (Elastic Kubernetes Service)**
 
 ###  What is EKS?
 
@@ -82,7 +82,7 @@ Study Log - August 1, 2025
 
 ---
 
-### 🔧 EKS Workflow:
+###  EKS Workflow:
 
 1. Create EKS Cluster (via Console, CLI, or `eksctl`)
 2. Configure `kubectl` to connect to EKS
