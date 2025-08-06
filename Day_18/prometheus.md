@@ -1,1 +1,1 @@
-Study Log - August 8, 2025
+Study Log - August 5, 2025
