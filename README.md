@@ -3,7 +3,7 @@
 
 
 
-### 1. Weather Dashboard Hackathon
+### 1. Weather Dashboard- Hackathon Project
 
 - **Description:** This project is a dashboard that collects and displays weather and air quality index (AQI) data for various cities. It was developed as part of a hackathon and demonstrates the use of **Kubernetes** for container orchestration and deployment.
 
