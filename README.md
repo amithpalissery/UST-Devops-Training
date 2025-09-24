@@ -32,14 +32,6 @@
 
 ***
 
- Projects
-- Weather dashboard
-- Gemini powered AI chatbot
-- Quantfolio India - AI Stock Assistant
-- Kubernetes AI Assistant
-
----
-
  Frontend Technologies
 - HTML, CSS, JS – Provides the user interface
 - Streamlit – The primary framework used for the user interface 
